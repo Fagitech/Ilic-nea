@@ -12,6 +12,14 @@
 
 .wrapper {max-width: 1024px;margin: auto}
 
+.left{
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
 .flex{
     display: flex;
     align-items: center;
@@ -78,8 +86,6 @@ nav ul li a{
 
 .display img{
     width: 100%;
-    --widthA: width:100%;
-    height: calc(var(--widthA)/3);
 }
 
 .mySlides {display:none;}
@@ -111,8 +117,7 @@ nav ul li a{
 }
 /**************************************************************************************************************************/
 .panel{
-    margin-top: 24px;
-    /* border:1px solid red; */
+    margin: 24px 0;
 }
 
 .panel h1 {
@@ -153,6 +158,55 @@ nav ul li a{
     height: 96px;
 }
 /**************************************************************************************************************************/
+
+.containerList{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 8px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.containerList img{
+    width: 256px;
+    padding-right: 8px;
+}
+
+.containerList hr{
+    margin: 16px 0;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.street{
+    font-size: 16px;
+}
+
+.name{
+    font-size: 24px;
+}
+
+.telephone{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(99, 201, 99, 0.808);
+    color: aliceblue;
+    padding: 8px;
+    border: 1px solid #a1a1;
+    align-items: center;
+}
+
+.telephone img{
+    width: 32px;
+}
+.telephone span{
+    font-size: 24px;
+}
+
+
+/**************************************************************************************************************************/
 @media screen and (max-width: 1200px) {
     .wrapper {max-width: 900px;}
 }
@@ -162,7 +216,7 @@ nav ul li a{
 }
 
 @media screen and (max-width: 768px) {
-    .wrapper {max-width: 95%}
+    .wrapper {max-width: 100%}
     /************************************************************/
     nav{
         display: none;
@@ -190,6 +244,15 @@ nav ul li a{
 
     .icon img{
         height: 64px;
+    }
+
+    /***********************************************************/
+    .containerList img{
+        width: 100%;
+    }
+
+    .telephone img{
+        width: 32px;
     }
 
 }
