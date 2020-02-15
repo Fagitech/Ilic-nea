@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Ilicínea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background"></div>
+    <header>
+        <div class="wrapper flex padding16">
+            <a href="index.html">
+                <span id="logo">Ilicínea</span>
+            </a>
+            <div class="menuBtn" onclick="menuBtn(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="wrapper">
+        <div class="display">
+            <a href="#">
+                <img class="mySlides" src="assets/img/banner/banner1.png" alt="banner1">
+            </a>
+            <a href="#">
+                <img class="mySlides" src="assets/img/banner/banner2.png" alt="banner2">
+            </a>
+            <div class="display-left slideBtn" onclick="plusDivs(1)">
+                <span>
+                    &#10094
+                </span>
+            </div>
+            <div class="display-right slideBtn" onclick="plusDivs(-1)">
+                <span>
+                    &#10095
+                </span>
+            </div>
+        </div>
+        <div class="panel white">
+            <h1>Lorem ipsum</h1>
+            <a href="noticias/2020/01/01/noticia.html">
+                <div class="containerList">
+                    <img class="left" src="assets/img/noticia.png" alt="logo">
+                    <div class="left">
+                        <h2>Lorem ipsum dolor sit amet</h3>
+                        <h4>Data: 01/01/2020</h4>
+                        <h4>Por: Lorem ipsum</h4>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </a>
+            <a href="noticias/2020/01/01/noticia.html">
+                <div class="containerList">
+                    <img class="left" src="assets/img/noticia.png" alt="logo">
+                    <div class="left">
+                        <h2>Lorem ipsum dolor sit amet</h3>
+                        <h4>Data: 01/01/2020</h4>
+                        <h4>Por: Lorem ipsum</h4>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </a>
+            <a href="noticias/2020/01/01/noticia.html">
+                <div class="containerList">
+                    <img class="left" src="assets/img/noticia.png" alt="logo">
+                    <div class="left">
+                        <h2>Lorem ipsum dolor sit amet</h3>
+                        <h4>Data: 01/01/2020</h4>
+                        <h4>Por: Lorem ipsum</h4>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </a>
+        </div>
+    </main>
+  <script src="script.js"></script>
+</body>
+</html>
